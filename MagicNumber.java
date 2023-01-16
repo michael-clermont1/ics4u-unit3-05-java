@@ -98,10 +98,10 @@ final class MagicNumber {
     public static ArrayList<Integer> findDuplicates(int[] arr) {
         final ArrayList<Integer> duplicates = new ArrayList<Integer>();
 
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 1; j < arr.length; j++) {
-                if (arr[i] == arr[j] && i != j) {
-                    duplicates.add(arr[i]);
+        for (int counter = 0; counter < arr.length; counter++) {
+            for (int counter2 = 1; counter2 < arr.length; counter2++) {
+                if (arr[counter] == arr[counter2] && counter != counter2) {
+                    duplicates.add(arr[counter]);
                     break;
                 }
             }
